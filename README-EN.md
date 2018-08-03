@@ -190,8 +190,8 @@ Agent decorate 2 thread pool implementation classes
 
 Add start options on Java command:
 
-- `-Xbootclasspath/a:/path/to/transmittable-thread-local-2.x.x.jar`
-- `-javaagent:/path/to/transmittable-thread-local-2.x.x.jar`
+- `-javaagent:path/to/transmittable-thread-local-2.x.x.jar`
+- `-Xbootclasspath/a:path/to/transmittable-thread-local-2.x.x.jar`
 
 **NOTE**：
 
@@ -201,8 +201,7 @@ Add start options on Java command:
 Java command example:
 
 ```bash
-java -Xbootclasspath/a:transmittable-thread-local-2.0.0.jar \
-    -javaagent:transmittable-thread-local-2.0.0.jar \
+java -javaagent:transmittable-thread-local-2.x.x.jar \
     -cp classes \
     com.alibaba.ttl.threadpool.agent.demo.AgentDemo
 ```
